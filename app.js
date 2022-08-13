@@ -20,6 +20,7 @@ if (process.env.NODE_ENV === 'development') {
 // HandleBars
 //! Add the word .engine after exphbs
 app.engine('.hbs', exphbs.engine({ defaultLayout: 'main', extname: '.hbs' }))
+// Both of these lines are needed for handlebars
 app.set('view engine', '.hbs')
 
 // Routes
