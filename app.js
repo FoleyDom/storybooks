@@ -1,10 +1,13 @@
 const path = require('path')
 const express = require('express')
+const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const passport = require('passport')
 const session = require('express-session')
+//Used to store user session *below*
+const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
 
 // Load config
@@ -35,6 +38,10 @@ app.use(
         secret: 'keyboard cat',
         resave: false,
         saveUninitialized: false,
+        // Stores user session using code below
+        store: MongoStore.create({
+            mongoUrl: process.env.MONGO_URI,
+        }),
     }),
 )
 
