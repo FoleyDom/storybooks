@@ -6,7 +6,7 @@ Write a short sentence or two about this project and what it does. Be sure to in
 
 **Link to project:** https://storybooksdom.up.railway.app/
 
-![alt tag]
+![alt tag]<a href="https://ibb.co/gm1t1CY"><img src="https://i.ibb.co/vV5L589/Screen-Shot-2022-09-28-at-2-10-58-PM.png" alt="Screen-Shot-2022-09-28-at-2-10-58-PM" border="0"></a>
 
 ## How It's Made:
 
